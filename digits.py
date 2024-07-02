@@ -60,6 +60,7 @@ def preprocess_image(image_path):
 # Path to the handwritten digit image
 image_path = 'digit.png'
 new_image = preprocess_image(image_path)
+
 # Predict the digit
 prediction = model.predict(new_image)
 predicted_digit = np.argmax(prediction)
